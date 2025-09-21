@@ -14,10 +14,13 @@ if ((weather !== "clear") && (weather !== "cloudy")) {
 
 let activity
 
-if () {
+if (temp >= 25 && weather === "clear") {
     activity = 'golf'
-} else if () {
+} else if ((temp >= 10 && temp <= 24 || weather === "cloudy")) {
     activity = 'bowling'
+}
+else {
+    activity = 'hiking'
 }
 
 console.log(activity)
